@@ -105,17 +105,17 @@
 </Group>
 <Group labelreference="L6">
 <Input>
-<Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">dsolve(diff(y(x), x, x) + diff(y(x), x) - 2*y(x) = x - 2, y(x));</Text-field>
+<Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">dsolve(diff(y(x), x, x) + 6*diff(y(x), x) + 5*y(x) = -x + 3, y(x));</Text-field>
 </Input>
 </Group>
 <Group labelreference="L7">
 <Input>
-<Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">dsolve(diff(y(x), x, x) + diff(y(x), x) - 2*y(x) = exp(-x), y(x));</Text-field>
+<Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">dsolve(diff(y(x), x, x) + 6*diff(y(x), x) + 5*y(x) = 3*exp(x), y(x));</Text-field>
 </Input>
 </Group>
 <Group labelreference="L8">
 <Input>
-<Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">dsolve(diff(y(x), x, x) + diff(y(x), x) - 2*y(x) = sin(2*x), y(x));</Text-field>
+<Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">dsolve(diff(y(x), x, x) + 6*diff(y(x), x) + 5*y(x) = 4*cos(2*x), y(x));</Text-field>
 </Input>
 </Group>
 <Group labelreference="L9">
