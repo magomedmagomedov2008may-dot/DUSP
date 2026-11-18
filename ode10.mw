@@ -88,202 +88,196 @@
 </Task-table>
 <Task/>
 <Group labelreference="L2">
-<Text-field style="Text" layout="Normal">Практикум №10</Text-field>
-</Group>
-<Group labelreference="L3">
-<Text-field style="Text" layout="Normal">Магомедов Магомед А., группа 2011</Text-field>
-</Group>
-<Group labelreference="L4">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">restart;</Text-field>
 </Input>
 </Group>
-<Group labelreference="L5">
+<Group labelreference="L3">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">with(plots):</Text-field>
 </Input>
 </Group>
-<Group labelreference="L6">
+<Group labelreference="L4">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">with(DEtools):</Text-field>
 </Input>
 </Group>
-<Group labelreference="L7">
+<Group labelreference="L5">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">ode1 := diff(y(x), x, x) + 6*diff(y(x), x) + 5*y(x) = 0;</Text-field>
 </Input>
 </Group>
-<Group labelreference="L8">
+<Group labelreference="L6">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">ic1 := y(0) = 0, D(y)(0) = -6;</Text-field>
 </Input>
 </Group>
-<Group labelreference="L9">
+<Group labelreference="L7">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">FSR1 := dsolve(ode1, output = basis);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L10">
+<Group labelreference="L8">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">dsolve(ode1);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L11">
+<Group labelreference="L9">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">sol1 := rhs(dsolve({ode1, ic1}));</Text-field>
 </Input>
 </Group>
-<Group labelreference="L12">
+<Group labelreference="L10">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">plotf1 := plot(FSR1, x = -3 .. 3, y = -5 .. 5):</Text-field>
 </Input>
 </Group>
-<Group labelreference="L13">
+<Group labelreference="L11">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">plots1 := plot(sol1, color = red, thickness = 3, x = -3 .. 3, y = -5 .. 5):</Text-field>
 </Input>
 </Group>
-<Group labelreference="L14">
+<Group labelreference="L12">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">display(plotf1, plots1);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L15">
+<Group labelreference="L13">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">sola1 := rhs(dsolve({ode1, y(0) = a, D(y)(0) = 0}));</Text-field>
 </Input>
 </Group>
-<Group labelreference="L16">
+<Group labelreference="L14">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">animate(plot, [sola1, x = -3 .. 3, y = -15 .. 15], a = -4 .. 4, frames = 100, trace = 11);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L17">
+<Group labelreference="L15">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">solb1 := rhs(dsolve({ode1, y(0) = 0, D(y)(0) = b}));</Text-field>
 </Input>
 </Group>
-<Group labelreference="L18">
+<Group labelreference="L16">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">animate(plot, [solb1, x = -3 .. 3, y = -15 .. 15], b = -15 .. 15, frames = 100, trace = 11);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L19">
+<Group labelreference="L17">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">ode2 := diff(y(x), x, x) + 8*diff(y(x), x) + 16*y(x) = 0;</Text-field>
 </Input>
 </Group>
-<Group labelreference="L20">
+<Group labelreference="L18">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">ic2 := y(0) = 0, D(y)(0) = -6;</Text-field>
 </Input>
 </Group>
-<Group labelreference="L21">
+<Group labelreference="L19">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">FSR2 := dsolve(ode2, output = basis);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L22">
+<Group labelreference="L20">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">dsolve(ode2);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L23">
+<Group labelreference="L21">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">sol2 := rhs(dsolve({ode2, ic2}));</Text-field>
 </Input>
 </Group>
-<Group labelreference="L24">
+<Group labelreference="L22">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">plotf2 := plot(FSR2, x = -3 .. 3, y = -5 .. 5):</Text-field>
 </Input>
 </Group>
-<Group labelreference="L25">
+<Group labelreference="L23">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">plots2 := plot(sol2, color = red, thickness = 3, x = -3 .. 3, y = -5 .. 5):</Text-field>
 </Input>
 </Group>
-<Group labelreference="L26">
+<Group labelreference="L24">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">display(plotf2, plots2);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L27">
+<Group labelreference="L25">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">sola2 := rhs(dsolve({ode2, y(0) = a, D(y)(0) = 0}));</Text-field>
 </Input>
 </Group>
-<Group labelreference="L28">
+<Group labelreference="L26">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">animate(plot, [sola2, x = -3 .. 3, y = -15 .. 15], a = -4 .. 4, frames = 100, trace = 11);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L29">
+<Group labelreference="L27">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">solb2 := rhs(dsolve({ode2, y(0) = 0, D(y)(0) = b}));</Text-field>
 </Input>
 </Group>
-<Group labelreference="L30">
+<Group labelreference="L28">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">animate(plot, [solb2, x = -3 .. 3, y = -15 .. 15], b = -15 .. 15, frames = 100, trace = 11);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L31">
+<Group labelreference="L29">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">ode3 := diff(y(x), x, x) - 10*diff(y(x), x) + 26*y(x) = 0;</Text-field>
 </Input>
 </Group>
-<Group labelreference="L32">
+<Group labelreference="L30">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">ic3 := y(0) = 0, D(y)(0) = -6;</Text-field>
 </Input>
 </Group>
-<Group labelreference="L33">
+<Group labelreference="L31">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">FSR3 := dsolve(ode3, output = basis);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L34">
+<Group labelreference="L32">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">dsolve(ode3);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L35">
+<Group labelreference="L33">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">sol3 := rhs(dsolve({ode3, ic3}));</Text-field>
 </Input>
 </Group>
-<Group labelreference="L36">
+<Group labelreference="L34">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">plotf3 := plot(FSR3, x = -1 .. 0.5, y = -5 .. 5):</Text-field>
 </Input>
 </Group>
-<Group labelreference="L37">
+<Group labelreference="L35">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">plots3 := plot(sol3, color = red, thickness = 3, x = -1 .. 0.5, y = -5 .. 5):</Text-field>
 </Input>
 </Group>
-<Group labelreference="L38">
+<Group labelreference="L36">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">display(plotf3, plots3);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L39">
+<Group labelreference="L37">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">sola3 := rhs(dsolve({ode3, y(0) = a, D(y)(0) = 0}));</Text-field>
 </Input>
 </Group>
-<Group labelreference="L40">
+<Group labelreference="L38">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">animate(plot, [sola3, x = -1 .. 0.5, y = -15 .. 15], a = -4 .. 4, frames = 100, trace = 11);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L41">
+<Group labelreference="L39">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">solb3 := rhs(dsolve({ode3, y(0) = 0, D(y)(0) = b}));</Text-field>
 </Input>
 </Group>
-<Group labelreference="L42">
+<Group labelreference="L40">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">animate(plot, [solb3, x = -1 .. 0.5, y = -15 .. 15], b = -15 .. 15, frames = 100, trace = 11);</Text-field>
 </Input>
