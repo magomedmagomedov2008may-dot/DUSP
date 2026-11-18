@@ -88,207 +88,201 @@
 </Task-table>
 <Task/>
 <Group labelreference="L2">
-<Text-field style="Text" layout="Normal">Практикум №11</Text-field>
-</Group>
-<Group labelreference="L3">
-<Text-field style="Text" layout="Normal">Магомедов Магомед А., группа 2011</Text-field>
-</Group>
-<Group labelreference="L4">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">restart;</Text-field>
 </Input>
 </Group>
-<Group labelreference="L5">
+<Group labelreference="L3">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">with(plots):</Text-field>
 </Input>
 </Group>
-<Group labelreference="L6">
+<Group labelreference="L4">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">dsolve(diff(y(x), x, x) + 6*diff(y(x), x) + 5*y(x) = -x + 3, y(x));</Text-field>
 </Input>
 </Group>
-<Group labelreference="L7">
+<Group labelreference="L5">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">dsolve(diff(y(x), x, x) + 6*diff(y(x), x) + 5*y(x) = 3*exp(x), y(x));</Text-field>
 </Input>
 </Group>
-<Group labelreference="L8">
+<Group labelreference="L6">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">dsolve(diff(y(x), x, x) + 6*diff(y(x), x) + 5*y(x) = 4*cos(2*x), y(x));</Text-field>
 </Input>
 </Group>
-<Group labelreference="L9">
+<Group labelreference="L7">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">P0 := [0, 0];</Text-field>
 </Input>
 </Group>
-<Group labelreference="L10">
+<Group labelreference="L8">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">opt1 := symbol = solidcircle, style = [line, point], linestyle = [solid, dot];</Text-field>
 </Input>
 </Group>
-<Group labelreference="L11">
+<Group labelreference="L9">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">opt2 := color = [grey, red], symbolsize = 30, scaling = constrained;</Text-field>
 </Input>
 </Group>
-<Group labelreference="L12">
+<Group labelreference="L10">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">de1 := {diff(x(t), t, t) + x(t) = 0, x(0) = Pi/4, D(x)(0) = 0};</Text-field>
 </Input>
 </Group>
-<Group labelreference="L13">
+<Group labelreference="L11">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">X1 := unapply(rhs(dsolve(de1)), t);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L14">
+<Group labelreference="L12">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">P1 := [sin(X1(t)), -cos(X1(t))];</Text-field>
 </Input>
 </Group>
-<Group labelreference="L15">
+<Group labelreference="L13">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">animate(plot, [[[P0, P1], [P1]], opt1, opt2], t = 0 .. 20*Pi, frames = 400);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L16">
+<Group labelreference="L14">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">de2 := {diff(x(t), t, t) + 0.2*diff(x(t), t) + x(t) = 0, x(0) = Pi/4, D(x)(0) = 0};</Text-field>
 </Input>
 </Group>
-<Group labelreference="L17">
+<Group labelreference="L15">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">X2 := unapply(rhs(dsolve(de2)), t);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L18">
+<Group labelreference="L16">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">P2 := [sin(X2(t)), -cos(X2(t))];</Text-field>
 </Input>
 </Group>
-<Group labelreference="L19">
+<Group labelreference="L17">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">animate(plot, [[[P0, P2], [P2]], opt1, opt2], t = 0 .. 20*Pi, frames = 400);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L20">
+<Group labelreference="L18">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">de3 := {diff(x(t), t, t) + 1*diff(x(t), t) + x(t) = 0, x(0) = Pi/4, D(x)(0) = 0};</Text-field>
 </Input>
 </Group>
-<Group labelreference="L21">
+<Group labelreference="L19">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">X3 := unapply(rhs(dsolve(de3)), t);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L22">
+<Group labelreference="L20">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">P3 := [sin(X3(t)), -cos(X3(t))];</Text-field>
 </Input>
 </Group>
-<Group labelreference="L23">
+<Group labelreference="L21">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">animate(plot, [[[P0, P3], [P3]], opt1, opt2], t = 0 .. 20*Pi, frames = 400);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L24">
+<Group labelreference="L22">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">de4 := {diff(x(t), t, t) + 3*diff(x(t), t) + x(t) = 0, x(0) = Pi/4, D(x)(0) = 0};</Text-field>
 </Input>
 </Group>
-<Group labelreference="L25">
+<Group labelreference="L23">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">X4 := unapply(rhs(dsolve(de4)), t);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L26">
+<Group labelreference="L24">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">P4 := [sin(X4(t)), -cos(X4(t))];</Text-field>
 </Input>
 </Group>
-<Group labelreference="L27">
+<Group labelreference="L25">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">animate(plot, [[[P0, P4], [P4]], opt1, opt2], t = 0 .. 20*Pi, frames = 400);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L28">
+<Group labelreference="L26">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">de5 := {diff(x(t), t, t) + x(t) = 0.1*sin(1.5*t), x(0) = Pi/12, D(x)(0) = 0};</Text-field>
 </Input>
 </Group>
-<Group labelreference="L29">
+<Group labelreference="L27">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">X5 := unapply(rhs(dsolve(de5)), t);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L30">
+<Group labelreference="L28">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">P5 := [sin(X5(t)), -cos(X5(t))];</Text-field>
 </Input>
 </Group>
-<Group labelreference="L31">
+<Group labelreference="L29">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">animate(plot, [[[P0, P5], [P5]], opt1, opt2], t = 0 .. 30*Pi, frames = 600);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L32">
+<Group labelreference="L30">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">de6 := {diff(x(t), t, t) + x(t) = 0.1*sin(1.2*t), x(0) = Pi/12, D(x)(0) = 0};</Text-field>
 </Input>
 </Group>
-<Group labelreference="L33">
+<Group labelreference="L31">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">X6 := unapply(rhs(dsolve(de6)), t);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L34">
+<Group labelreference="L32">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">P6 := [sin(X6(t)), -cos(X6(t))];</Text-field>
 </Input>
 </Group>
-<Group labelreference="L35">
+<Group labelreference="L33">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">animate(plot, [[[P0, P6], [P6]], opt1, opt2], t = 0 .. 30*Pi, frames = 600);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L36">
+<Group labelreference="L34">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">de7 := {diff(x(t), t, t) + x(t) = 0.1*sin(1.05*t), x(0) = Pi/12, D(x)(0) = 0};</Text-field>
 </Input>
 </Group>
-<Group labelreference="L37">
+<Group labelreference="L35">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">X7 := unapply(rhs(dsolve(de7)), t);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L38">
+<Group labelreference="L36">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">P7 := [sin(X7(t)), -cos(X7(t))];</Text-field>
 </Input>
 </Group>
-<Group labelreference="L39">
+<Group labelreference="L37">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">animate(plot, [[[P0, P7], [P7]], opt1, opt2], t = 0 .. 30*Pi, frames = 600);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L40">
+<Group labelreference="L38">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">de8 := {diff(x(t), t, t) + x(t) = 0.1*sin(t), x(0) = Pi/12, D(x)(0) = 0};</Text-field>
 </Input>
 </Group>
-<Group labelreference="L41">
+<Group labelreference="L39">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">X8 := unapply(rhs(dsolve(de8)), t);</Text-field>
 </Input>
 </Group>
-<Group labelreference="L42">
+<Group labelreference="L40">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">P8 := [sin(X8(t)), -cos(X8(t))];</Text-field>
 </Input>
 </Group>
-<Group labelreference="L43">
+<Group labelreference="L41">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false">animate(plot, [[[P0, P8], [P8]], opt1, opt2], t = 0 .. 30*Pi, frames = 600);</Text-field>
 </Input>
